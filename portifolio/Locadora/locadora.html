@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Locadora 2000</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- Java Script -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Menu Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:SteelBlue">
+            <div class="container-fluid">
+                <img style="width:6%;" src="img/locadora.png">
+                <a class="navbar-brand" href="#topo">Locadora 2000</a>
+                <!-- Div com itens clicáveis -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#tabFilmes">Filmes Disponíveis</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#drop" id="dropGeneros" role="button" data-bs-toggle="dropdown">Filmes por Categoria </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="#gAcao">Ação </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#gComedia">Comedia </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#gRomance">Romance </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#gAnimacao">Animação </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#gDrama">Drama </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cadFilmes">Cadastrar Filme</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1 class="display-1 text-center mb-5">Locadora 2022!!!</h1>
+        <!-- Tabela filmes disponíveis -->
+        <div class="container">
+            <table class="table table-striped table-hover">
+                <!-- Linha com títulos das colunas -->
+                <thead>
+                    <tr>
+                        <th scope="col">Código					</th>
+                        <th scope="col">Título					</th>
+                        <th scope="col">Diretor					</th>
+                        <th scope="col">Lançamento				</th>
+                        <th scope="col">Gênero					</th>
+                        <th scope="col">Ator/Atriz Principal	</th>
+                        <th scope="col">Nota IMDb				</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linha expandida com gênero do filme -->
+                    <tr>
+                        <th class="text-center table-primary" colspan="7" id="#gAcao">Ação</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Matrix</td>
+                        <td>Lana Wachowski, Lilly Wachowski</td>
+                        <td>21 de Maio de 1999</td>
+                        <td>Ação</td>
+                        <td>Keanu Reeves</td>
+                        <td>8,7/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Velozes e Furiosos 2</td>
+                        <td>John Singleton</td>
+                        <td>6 de Junho de 2003 ("Estados Unidos")</td>
+                        <td>Ação/Crime</td>
+                        <td>Vin Diesel,Paul Walker,Michelle Rodriguez</td>
+                        <td>6/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Batman: O Cavaleiro das Trevas</td>
+                        <td>Christopher Nolan</td>
+                        <td>18 de Julho de 2008</td>
+                        <td>Ação</td>
+                        <td>Christian Bale</td>
+                        <td>9/10</td>
+                    </tr>
+                    <!-- Linha expandida com gênero do filme -->
+                    <tr>
+                        <th class="text-center table-primary" colspan="7" id="#gAnim">Animação</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Shrek</td>
+                        <td>Andrew Adamson, Vicky Jenson</td>
+                        <td>22 de Junho de 2001 </td>
+                        <td>Animação, comedia</td>
+                        <td>Mike Myers,Eddie Murphy,John Lithgow.</td>
+                        <td>7,9/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>O Rei Leão</td>
+                        <td>Rob Minkoff, Roger Allers</td>
+                        <td>8 de julho de 1994</td>
+                        <td>Animação</td>
+                        <td>James Earl Jones (voz)</td>
+                        <td>8,5/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Minios</td>
+                        <td>Pierre Coffin, Kyle Balda</td>
+                        <td>25 de Junho de 2015</td>
+                        <td>Animação, infantil</td>
+                        <td>Pierre Coffin, Steve Carel</td>
+                        <td>6,8/10</td>
+                    </tr>
+                    <!-- Linha expandida com gênero do filme -->
+                    <tr>
+                        <th class="text-center table-primary" colspan="7" id="#gRom">Romance</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Titanic</td>
+                        <td>James Cameron</td>
+                        <td>19 de Dezembro de 1997</td>
+                        <td>Romance, Drama</td>
+                        <td>Leonardo DiCaprio,Kate Winslet,Billy Zane</td>
+                        <td>7,9/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Como se Fosse a Primeira Vez</td>
+                        <td>Peter Segal</td>
+                        <td>13 de Fevereiro de 2004</td>
+                        <td>Romance, comedia</td>
+                        <td>Adam Sandler, Drew Barrymore</td>
+                        <td>6,8/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Armageddon</td>
+                        <td>Michael Bay</td>
+                        <td>7 de Agosto de 1998 </td>
+                        <td>Romance</td>
+                        <td>Bruce Willis,Liv Tyler,Ben Affleck</td>
+                        <td>6,7/10</td>
+                    </tr>
+                    <!-- Linha expandida com gênero do filme -->
+                    <tr>
+                        <th class="text-center table-primary" colspan="7" id="#gSus">Suspense</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Cidade de Deus</td>
+                        <td>Fernando Meirelles, Kátia Lund</td>
+                        <td>30 de agosto de 2002</td>
+                        <td>Suspense</td>
+                        <td>Alexandre Rodrigues</td>
+                        <td>8,6/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Garota Exemplar</td>
+                        <td>David Fincher</td>
+                        <td>2 de outubro de 2014</td>
+                        <td>Suspense</td>
+                        <td>Rosamund Pike</td>
+                        <td>8,1/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Corra!</td>
+                        <td>Jordan Peele</td>
+                        <td>18 de maio de 2017</td>
+                        <td>Suspense</td>
+                        <td>Daniel Kaluuya</td>
+                        <td>8,6/10</td>
+                    </tr>
+                    <!-- Linha expandida com gênero do filme -->
+                    <tr>
+                        <th class="text-center table-primary" colspan="7" id="#gDrama">Drama</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>Um Sonho de Liberdade</td>
+                        <td>Frank Darabont</td>
+                        <td>17 de março de 1995</td>
+                        <td>Drama</td>
+                        <td>Morgan Freeman</td>
+                        <td>9,3/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>O Poderoso Chefão</td>
+                        <td>Francis Ford Coppola</td>
+                        <td>7 de julho de 1972</td>
+                        <td>Drama</td>
+                        <td>Al Pacino</td>
+                        <td>9,2/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15</th>
+                        <td>Por Lugares Incríveis</td>
+                        <td>Brett Haley</td>
+                        <td>28 de Fevereiro de 2020 </td>
+                        <td>Drama</td>
+                        <td>Jennifer Niven </td>
+                        <td>6,5/10</td>
+                    </tr>
+                    <!-- Linha expandida com gênero do filme -->
+                    <tr>
+                        <th class="text-center table-primary" colspan="7" id="#gCom">Comédia</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">16</th>
+                        <td>As Branquelas</td>
+                        <td>Keenen Ivory Wayans</td>
+                        <td>27 de Agosto de 2004</td>
+                        <td>Comedia</td>
+                        <td>Marlon Wayans,Shawn Wayans,Jennifer Carpenter </td>
+                        <td>5,7/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">17</th>
+                        <td>Mr.Bean</td>
+                        <td>Mel Smith</td>
+                        <td>22 de Agosto de 1997 </td>
+                        <td>comedia</td>
+                        <td>Rowan Atkinson</td>
+                        <td>8,6/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18</th>
+                        <td>Se Beber, Não case!</td>
+                        <td>Todd Phillips</td>
+                        <td>21 de Agosto de 2009</td>
+                        <td>comedia</td>
+                        <td>Bradley Cooper,Zach Galifianakis</td>
+                        <td>6,4/10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Divisor de página -->
+        <div class="m-5">
+            <hr class="border-primary border-3 opacity-75">
+        </div>
+        <div class="container mb-5">
+            <form>
+                <div class="container mb-5" style="background-color:SteelBlue">
+                    <h2 class="text-center">Cadastrar novo Filme</h2>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label for="codFilme" class="form-label">Codigo</label>
+                        <input type="text" class="form-control" id="codFilme" placeholder="00">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="anoFilme" class="form-label">Lançamento</label>
+                        <input type="date" class="form-control" id="anoFilme" placeholder="DD de MM de AAAA">
+                    </div>
+                    <div class="w-100"></div>
+                    <!-- Quebra de coluna -->
+                    <div class="mb-3 col">
+                        <label for="tituloFilme" class="form-label">Titulo</label>
+                        <input type="text" class="form-control" id="tituloFilme">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="diretorFilme" class="form-label">Diretor</label>
+                        <input type="text" class="form-control" id="diretorFilme">
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="mb-3 col">
+                        <label for="ator/AtrizPrincipal" class="form-label">Ator/Atriz Principal</label>
+                        <input type="text" class="form-control" id="ator/AtrizPrincipal">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="IMDb" class="form-label">IMDb</label>
+                        <input type="number" class="form-control" id="IMDb">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col form-check">
+                        <input type="radio" name="radio" id="radGenAcao" class="form-check-input" value="acao">
+                        <label for="radGenAcao" class="form-label">Ação</label>
+                    </div>
+                    <div class="mb-3 col form-check">
+                        <input type="radio" name="radio" id="radGenAnim" class="form-check-input" value="anim">
+                        <label for="radGenAnim" class="form-label">Animação</label>
+                    </div>
+                    <div class="mb-3 col form-check">
+                        <input type="radio" name="radio" id="radGenRom" class="form-check-input" value="rom">
+                        <label for="radGenRom" class="form-label">Romance</label>
+                    </div>
+                    <div class="mb-3 col form-check">
+                        <input type="radio" name="radio" id="radGenCom" class="form-check-input" value="com">
+                        <label for="radGenCom" class="form-label">Comedia</label>
+                    </div>
+                    <div class="mb-3 col form-check">
+                        <input type="radio" name="radio" id="radGenDrama" class="form-check-input" value="drama">
+                        <label for="radGenDrama" class="form-label">Drama</label>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">Cadastrar</button>
+                </div>
+            </form>
