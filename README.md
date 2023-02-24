@@ -8,6 +8,8 @@ Fiz meu portifólio em  apenas uma pagina, dividi em 5 seções minha nav bar:
 * Serviço
 * Projeto
 * Contato
+
+
 Usei um menu fixado contendo os links de cada seção, cada link clicado leva para suas seções devida.
 Minha capa principal usei uma imagem que combina mais com meu estilo e junto dessa imagem coloquei meu nome.
 Na seção sobre fiz uma pequena apresentação quem eu sou e uma img.
