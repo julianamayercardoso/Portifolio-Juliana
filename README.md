@@ -1,3 +1,3 @@
-# : --------: Projeto Portifólio
+# : : Projeto Portifólio
 
 ## Estrutura Básica
